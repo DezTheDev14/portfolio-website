@@ -1,0 +1,150 @@
+/* <<< Page Layout & Formatting (start) >>> */
+
+  /* Establishing the background image that will span the entire page, repeating when necessary. */
+body {
+  background-image: url(images/code.jpg);
+  background-repeat: repeat-y;
+}
+
+  /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
+header, footer {
+  background-color: lightblue;
+  margin-top: -21px;
+}
+
+  /* Establishing the content area for the page. */
+main {
+  margin: 20px 100px 41px 100px;
+}
+
+/* <<< Page Layout & Formatting (end) >>> */
+
+
+
+
+/* <<< Content Formatting (start) >>> */
+
+  /* << Text Formatting (start) >> */
+
+    /* Aligning all headings throughout the page to the center of the page. */
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+    /* Establishing the font-family for the h3 and h4. */
+h3, h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+    /* Justifying all paragraphs (and related listed, ordered and unordered) throughout the page, as well as establishing the font-family and font-size. */
+p, ul, ol {
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+    /* Establishing the font-family and font-size for the h2. */
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+}
+
+    /* Establishing the font-size for the h3. */
+h3 {
+  font-size: 20px;
+}
+
+    /* Establishing a black text color for the "header" and "footer" sections. */
+header, footer {
+  color: black;
+}
+
+    /* Establishing a white text color for the "main" section. */
+main {
+  color: white;
+}
+
+    /* Establishing the font-family, font-size, and color for the h1. */
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 32px;
+  color: orange;
+}
+
+  /* << Text Formatting (end) >> */
+
+
+  /* << Horizontal Rule Formatting (start) >> */
+
+    /* Establishing the diamond-shaped horizontal rules found in the "main" section. */
+main > div > article > hr {
+  width: 25px;
+  height: 25px;
+  background: orange;
+  color: orange;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform: rotate(45deg)
+}
+  /* << Horizontal Rule Formatting (end) >> */
+
+
+  /* << Image Formatting (start) >> */
+
+    /* Aligning all images found in the "main" section to the center of the page. */
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    /* Establishing the horizontal spacing between the images (some of which are active external links) found in the "footer" section. */
+.external-links {
+  padding: 0px;
+  margin: 0px 30px 0px 30px;
+}
+
+  /* << Image Formatting (end) >> */
+
+
+  /* << Link Formatting (start) >> */
+
+    /* Establishing button blocks (and their spacing) around the internal links found in the "header" section. */
+.button {
+  display: inline-block;
+  margin: 0px 0px 5px 0px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+    /* Establishing the color-state hierarchy for the internal links found in the "header" section. */
+header > div > nav > a:link {color: darkorchid}
+header > div > nav > a:visited {color: darkblue}
+header > div > nav > a:hover {color: palevioletred}
+header > div > nav > a:active {color: darkmagenta}
+
+    /* Establishing the color-state hierarchy for the internal and external links found in the "main" section. */
+main > div > article > section > p > a:link {color: orange}
+main > div > article > section > p > a:visited {color: darkmagenta}
+main > div > article > section > p > a:hover {color: palevioletred}
+main > div > article > section > p > a:active {color: darkorchid}
+main > div > article > section > ol > li > a:link {color: orange}
+main > div > article > section > ol > li > a:visited {color:darkmagenta}
+main > div > article > section > ol > li > a:hover {color: palevioletred}
+main > div > article > section > ol > li > a:active {color: darkorchid}
+
+    /* Establishing the color-state hierarchy for the internal links found in the "footer" section. */
+footer > div > nav > a:link {color: darkorchid}
+footer > div > nav > a:visited {color: darkblue}
+footer > div > nav > a:hover {color: palevioletred}
+footer > div > nav > a:active {color: darkmagenta}
+
+    /* Establishing the horizontal spacing between the internal links found in the "footer" section. */
+.internal-links {
+  margin: 0px 12px 5px 0px;
+}
+
+  /* << Link Formatting (end) >> */
+
+/* <<< Content Formatting (end) >>> */
