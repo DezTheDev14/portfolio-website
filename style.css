@@ -96,6 +96,7 @@ main > div > article > hr {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 450px;
 }
 
     /* Establishing the horizontal spacing between the images (some of which are active external links) found in the "footer" section. */
