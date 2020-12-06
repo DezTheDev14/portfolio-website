@@ -2,12 +2,12 @@
 
   /* Establishing the background image that will span the entire page, repeating when necessary. This will be changed to a background color after removing the image. */
 body {
-  background-color: #93827F;
+  background-color: #F2EDEB;
 }
 
   /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
 header, footer {
-  background-color: #36393B;
+  background-color: #BD93BD;
   margin-top: -54px;
 }
 
@@ -46,7 +46,7 @@ p, ul, ol {
 h2 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 45px;
-  color: #EEEEFF;
+  color: #BD93BD;
 }
 
     /* Establishing the font-size for the h3. */
@@ -54,21 +54,26 @@ h3 {
   font-size: 35px;
 }
 
+    /* Establishing the font-size and vertical spacing for the h4. */
+h4 {
+  font-size: 20px;
+  padding: 5px 0px 0px 0px;
+}
+
     /* Establishing a black text color for the "header" and "footer" sections. */
 header, footer {
-  color: #F7DD72;
+  color: #F2EDEB;
 }
 
     /* Establishing a white text color for the "main" section. */
 main {
-  color: black;
+  color: #353535;
 }
 
     /* Establishing the font-family, font-size, and color for the h1. */
 h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 80px;
-  color: #F7DD72;
 }
 
   /* << Text Formatting (end) >> */
@@ -80,8 +85,8 @@ h1 {
 main > div > article > hr {
   width: 25px;
   height: 25px;
-  background: #F7DD72;
-  color: #F7DD72;
+  background: #BD93BD;
+  color: #BD93BD;
   margin-top: 50px;
   margin-bottom: 50px;
   transform: rotate(45deg)
@@ -103,6 +108,8 @@ main > div > article > hr {
 .external-links {
   padding: 0px;
   margin: 0px 113px 0px 113px;
+  width: 40px;
+  height: 40px;
 }
 
   /* << Image Formatting (end) >> */
@@ -116,31 +123,31 @@ main > div > article > hr {
   margin: 0px 68px 5px 68px;
   padding: 5px 5px 5px 5px;
   border-radius: 5px;
-  background-color: #F7DD72;
+  background-color: #F2EDEB;
 }
 
     /* Establishing the color-state hierarchy for the internal links found in the "header" section. */
-header > div > nav > a:link {color: darkorchid}
-header > div > nav > a:visited {color: darkcyan}
-header > div > nav > a:hover {color: palevioletred}
-header > div > nav > a:active {color: darkmagenta}
+header > div > nav > a:link {color: #BD93BD}
+header > div > nav > a:visited {color: darkblue} 
+header > div > nav > a:hover {color: darkmagenta}
+header > div > nav > a:active {color: maroon}
 
     /* Establishing the color-state hierarchy for the internal and external links found in the "main" section. */
-main > div > article > section > p > a:link {color: #F7DD72}
-main > div > article > section > p > a:visited {color: lightblue}
-main > div > article > section > p > a:hover {color: palevioletred}
-main > div > article > section > p > a:active {color: darkorchid}
+main > div > article > section > p > a:link {color: #BD93BD}
+main > div > article > section > p > a:visited {color: darkmagenta}
+main > div > article > section > p > a:hover {color: cornflowerblue}
+main > div > article > section > p > a:active {color: darkblue}
 
-main > div > article > section > ol > li > a:link {color: #F7DD72}
-main > div > article > section > ol > li > a:visited {color: lightblue}
-main > div > article > section > ol > li > a:hover {color: palevioletred}
-main > div > article > section > ol > li > a:active {color: darkorchid}
+main > div > article > section > ol > li > a:link {color: #BD93BD}
+main > div > article > section > ol > li > a:visited {color: darkmagenta}
+main > div > article > section > ol > li > a:hover {color: cornflowerblue}
+main > div > article > section > ol > li > a:active {color: darkblue}
 
     /* Establishing the color-state hierarchy for the internal links found in the "footer" section. */
-footer > div > nav > a:link {color: #F7DD72}
-footer > div > nav > a:visited {color: lightblue}
-footer > div > nav > a:hover {color: palevioletred}
-footer > div > nav > a:active {color: darkmagenta}
+footer > div > nav > a:link {color: #F2EDEB}
+footer > div > nav > a:visited {color: black}
+footer > div > nav > a:hover {color: darkblue}
+footer > div > nav > a:active {color: maroon}
 
     /* Establishing the horizontal spacing between the internal links found in the "footer" section. */
 .footer-internal-links {
