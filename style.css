@@ -117,7 +117,7 @@ main > div > article > hr {
     /* Establishing button blocks (and their spacing) around the internal links found in the "header" section. */
 .button-internal-links {
   display: inline-block;
-  margin: 0px 55px 5px 55px;
+  margin: 0px 57px 5px 57px;
   padding: 5px 5px 5px 5px;
   border-radius: 5px;
   background-color: #F2EDEB;
