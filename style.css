@@ -1,3 +1,8 @@
+    /* Establishing scroll-behavior for internal page navigation. */
+html {
+  scroll-behavior: smooth;
+}
+
 /* <<< Page Layout & Formatting (start) >>> */
 
   /* Establishing the background image that will span the entire page, repeating when necessary. This will be changed to a background color after removing the image. */
@@ -14,6 +19,7 @@ header, footer {
   /* Establishing the content area for the page. */
 main {
   margin: 20px 300px 74px 300px;
+  scroll-behavior: smooth;
 }
 
 /* <<< Page Layout & Formatting (end) >>> */
