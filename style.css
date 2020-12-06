@@ -1,4 +1,4 @@
-    /* Establishing scroll-behavior for internal page navigation. */
+/* Establishing scroll-behavior for internal page navigation. */
 html {
   scroll-behavior: smooth;
 }
@@ -8,6 +8,7 @@ html {
   /* Establishing the background image that will span the entire page, repeating when necessary. This will be changed to a background color after removing the image. */
 body {
   background-color: #F2EDEB;
+  margin: 0px;
 }
 
   /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
