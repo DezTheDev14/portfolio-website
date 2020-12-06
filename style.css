@@ -5,7 +5,7 @@ html {
 
 /* <<< Page Layout & Formatting (start) >>> */
 
-  /* Establishing the background color for the entire web page. */
+  /* Establishing the background image that will span the entire page, repeating when necessary. This will be changed to a background color after removing the image. */
 body {
   background-color: #F2EDEB;
 }
@@ -16,7 +16,13 @@ header, footer {
   margin-top: -54px;
 }
 
+  /* Establishing the content area for the page. */
+main {
+  /* margin: 20px 300px 74px 300px; */
+}
+
 /* <<< Page Layout & Formatting (end) >>> */
+
 
 
 
@@ -59,12 +65,12 @@ h4 {
   padding: 5px 0px 0px 0px;
 }
 
-    /* Establishing the text color for the "header" and "footer" sections. */
+    /* Establishing a black text color for the "header" and "footer" sections. */
 header, footer {
   color: #F2EDEB;
 }
 
-    /* Establishing the text color for the "main" section. */
+    /* Establishing a white text color for the "main" section. */
 main {
   color: #353535;
 }
@@ -76,6 +82,7 @@ h1 {
 }
 
   /* << Text Formatting (end) >> */
+
 
   /* << Horizontal Rule Formatting (start) >> */
 
@@ -90,6 +97,7 @@ main > div > article > hr {
   transform: rotate(45deg)
 }
   /* << Horizontal Rule Formatting (end) >> */
+
 
   /* << Image Formatting (start) >> */
 
@@ -112,12 +120,29 @@ main > div > article > hr {
 
   /* << Image Formatting (end) >> */
 
+
   /* << Link Formatting (start) >> */
 
     /* Establishing button blocks (and their spacing) around the internal links found in the "header" section. */
-.button-internal-links {
+.left-button-internal-link {
+  display: inline-block;
+  margin: 0px 0px 5px 50px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #F2EDEB;
+}
+
+.mid-button-internal-links {
   display: inline-block;
   margin: 0px 60px 5px 60px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  background-color: #F2EDEB;
+}
+
+.right-button-internal-link {
+  display: inline-block;
+  margin: 0px 50px 5px 0px;
   padding: 5px 5px 5px 5px;
   border-radius: 5px;
   background-color: #F2EDEB;
@@ -153,4 +178,4 @@ footer > div > nav > a:active {color: maroon}
 
   /* << Link Formatting (end) >> */
 
-/* <<< Content Formatting (end
+/* <<< Content Formatting (end) >>> */
