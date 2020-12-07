@@ -8,6 +8,7 @@ html {
   /* Establishing the background image that will span the entire page, repeating when necessary. This will be changed to a background color after removing the image. */
 body {
   background-color: #F2EDEB;
+  margin-right: -100px;
 }
 
   /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
