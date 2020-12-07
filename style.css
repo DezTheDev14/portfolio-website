@@ -19,7 +19,7 @@ header, footer {
   /* Establishing the content area for the page. */
 main {
   margin: 20px 0px 74px 0px;
-  padding: 0px 100px 0px 100px;
+  /* padding: 0px 100px 0px 100px; */
 }
 
 /* <<< Page Layout & Formatting (end) >>> */
