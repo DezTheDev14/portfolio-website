@@ -8,18 +8,19 @@ html {
   /* Establishing the background image that will span the entire page, repeating when necessary. This will be changed to a background color after removing the image. */
 body {
   background-color: #F2EDEB;
-  margin-right: -100px;
+  /* margin-right: -100px; */
 }
 
   /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
 header, footer {
   background-color: #BD93BD;
-  margin-top: -54px;
+  /* margin-top: -54px; */
 }
 
   /* Establishing the content area for the page. */
 main {
-  margin: 20px 0px 74px 0px;
+  margin: 20px 0px 20px 0px;
+  /* margin: 20px 0px 74px 0px; */
   /* padding: 0px 100px 0px 100px; */
 }
 
