@@ -1,8 +1,8 @@
 /*
 
-There are extra margin spaces above and to the right (the right-side margin is only visible in the mobile view) of my webpage. I've combed through all of my styling choices and I can find nothing that I've done to create these. Upon removing all of my styling, these margins still exist. Is there some type of default issue with creating new project files that I'm unaware of?
+There are extra margin spaces above and to the right (the right-side margin is only visible in the mobile view) of my webpage. I've combed through all of my styling choices and I can find nothing that I've done to create these. Upon removing all of my styling, these margins still exist. Is there some type of default issue with creating new project files in repl.it that I'm unaware of?
 
-The mobile view of my webpage is distorted (the content is seemingly being compressed into a more vertical format than intended) compared to the web view, despite my inclusion of this code ( <meta name="viewport" content="width=device-width, initial-scale=1"> ) in the "head" of my HTML file. I was under the impression that line of code was supposed to fit my webpage and it's intended formating to whatever screen size is viewing it. Should this issue be occuring?
+The mobile view of my webpage is distorted (the content is seemingly being compressed into a more vertical format than intended) compared to the web view, despite my inclusion of this code ( <meta name="viewport" content="width=device-width, initial-scale=1"> ) in the "head" of my HTML file. I was under the impression that this line of code was supposed to fit my webpage and it's intended formating to whatever screen size is viewing it. Should this issue be occuring?
 
 */
 
