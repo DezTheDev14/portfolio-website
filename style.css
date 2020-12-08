@@ -11,9 +11,10 @@ When comparing my code to that of the Thinkful example portfolio’s, I can’t 
 
 /* <<< Page Layout & Formatting (start) >>> */
 
-  /* Establishing the background color. */
+  /* Establishing the background image/color. */
 body {
-  background-color: #F2EDEB;
+  background-image: url(images/gray-watermark-mini-flowers.gif);
+  /* background-color: #F2EDEB; */
   /* margin-right: -104px; */
   /* margin-top: -54px; */
 }
