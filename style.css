@@ -4,6 +4,8 @@ There are extra margin spaces above and to the right (the right-side margin is o
 
 The mobile view of my webpage is distorted (the content is seemingly being compressed into a more vertical format than intended) compared to the web view, despite my inclusion of this code ( <meta name="viewport" content="width=device-width, initial-scale=1"> ) in the "head" of my HTML file. I was under the impression that this line of code was supposed to fit my webpage and it's intended formatting to whatever screen size is viewing it. Should this issue be occurring?
 
+When comparing my code to that of the Thinkful example portfolio’s, I can’t see any significant difference that would’ve created this issue for me. Additionally, I can see no indication that this was an issue that they needed to address. I can’t figure out what’s going on here.
+
 */
 
 
