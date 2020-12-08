@@ -19,6 +19,10 @@ body {
   /* margin-top: -54px; */
 }
 
+#home{
+  border: 1px solid #BD93BD;
+}
+
   /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
 header, footer {
   background-color: #BD93BD;
