@@ -21,6 +21,7 @@ body {
 
 #home{
   border: 1px solid #BD93BD;
+  margin-right: 0px;
 }
 
   /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
