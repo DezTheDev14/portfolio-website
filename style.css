@@ -1,44 +1,29 @@
-/*
-
-There are extra margin spaces above and to the right (the right-side margin is only visible in the mobile view) of my webpage. I've combed through all of my styling choices and I can find nothing that I've done to create these. Upon removing all of my styling, these margins still exist. Is there some type of default issue with creating new project files in repl.it that I'm unaware of?
-
-The mobile view of my webpage is distorted (the content is seemingly being compressed into a more vertical format than intended) compared to the web view, despite my inclusion of this code ( <meta name="viewport" content="width=device-width, initial-scale=1"> ) in the "head" of my HTML file. I was under the impression that this line of code was supposed to fit my webpage and it's intended formatting to whatever screen size is viewing it. Should this issue be occurring?
-
-When comparing my code to that of the Thinkful example portfolio’s, I can’t see any significant difference that would’ve created this issue for me. Additionally, I can see no indication that this was an issue that they needed to address. I can’t figure out what’s going on here.
-
-*/
-
-
 /* <<< Page Layout & Formatting (start) >>> */
 
-  /* Establishing the background image/color. */
+  /* Establishing the background image (or color) for the "body". */
 body {
   background-image: url(images/gray-watermark-mini-flowers.gif);
   /* background-color: #F2EDEB; */
-  /* margin-right: -104px; */
-  /* margin-top: -54px; */
 }
 
-#home{
-  border: 1px solid #BD93BD;
-  margin-right: 0px;
-}
-
-  /* Establishing the visual representation of the "header" and "footer" sections via a background color. */
+  /* Establishing the background color for the "header" and "footer" sections. */
 header, footer {
   background-color: #BD93BD;
-  /* margin-top: -54px; */
 }
 
-  /* Establishing the content area for the page. */
+  /* Establishing a border around the "div" (designated with the "home" ID) within the "header" section. This is being done to mitigate an unforeseen margin issue at the top of the page. */
+#home {
+  border: 1px solid #BD93BD;
+}
+
+  /* Establishing the vertical spacing between the content area for the page and the "header" and "footer" sections. */
 main {
-  margin: 20px 0px 20px 0px;
-  /* margin: 20px 0px 74px 0px; */
-  /* padding: 0px 250px 0px 250px; */
+  margin: 20px 0px;
 }
 
+  /* Establishing the horizontal spacing between the content area and the overall border of the page. */
 section {
-	padding: 0 25%;
+	padding: 0 25%; /* ADJUST THIS */
 }
 
 /* <<< Page Layout & Formatting (end) >>> */
@@ -58,9 +43,8 @@ h3, h4 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-    /* Justifying all paragraphs (and related listed, ordered and unordered) throughout the page, as well as establishing the font-family and font-size. */
+    /* Establishing the font-family and font-size for the p, ul, and ol. */
 p, ul, ol {
-  text-align: justify;
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
 }
@@ -122,16 +106,8 @@ main > div > article > hr {
     /* Aligning all images found in the "main" section to the center of the page. */
 .image-center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 350px;
-  height: 400px;
-  border-radius: 8px;
-  border: 1px solid #F2EDEB;
-}
-
-iframe { 
   width: 100%;
+  height: auto;
   border-radius: 8px;
   border: 1px solid #F2EDEB;
 }
@@ -139,9 +115,11 @@ iframe {
     /* Establishing the horizontal spacing between the images (some of which are active external links) found in the "footer" section. */
 .external-links {
   padding: 0px;
-  margin: 0px 113px 0px 113px;
+  margin: 0px 1px 0px 1px;
   width: 40px;
   height: 40px;
+  border-radius: 4px;
+  border: 1px solid #BD93BD;
 }
 
   /* << Image Formatting (end) >> */
@@ -152,39 +130,36 @@ iframe {
     /* Establishing button blocks (and their spacing) around the internal links found in the "header" section. */
 .button-internal-links {
   display: inline-block;
-  margin: 0px 68px 5px 68px;
-  padding: 5px 5px 5px 5px;
+  margin: 0px 1px 5px 1px;
+  padding: 5px 2px;
   border-radius: 5px;
   background-color: #F2EDEB;
 }
 
-    /* Establishing the color-state hierarchy for the internal links found in the "header" section. */
-header > div > nav > a:link {color: #BD93BD}
-header > div > nav > a:visited {color: darkblue} 
-header > div > nav > a:hover {color: darkmagenta}
-header > div > nav > a:active {color: maroon}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: #BD93BD;
+}
+
+    /* Establishing the color-state hierarchy for the internal links found in the "header" and "footer" sections. */
+header > div > nav > div > a:link, footer > div > nav > div > a:link {color: #BD93BD}
+header > div > nav > div > a:visited, footer > div > nav > div > a:visited {color: darkblue} 
+header > div > nav > div > a:hover, footer > div > nav > div > a:hover {color: darkmagenta}
+header > div > nav > div > a:active, footer > div > nav > div > a:active {color: maroon}
 
     /* Establishing the color-state hierarchy for the internal and external links found in the "main" section. */
 main > div > article > section > p > a:link {color: #BD93BD}
-main > div > article > section > p > a:visited {color: darkmagenta}
-main > div > article > section > p > a:hover {color: cornflowerblue}
-main > div > article > section > p > a:active {color: darkblue}
+main > div > article > section > p > a:visited {color: darkblue}
+main > div > article > section > p > a:hover {color: darkmagenta}
+main > div > article > section > p > a:active {color: maroon}
 
 main > div > article > section > ol > li > a:link {color: #BD93BD}
-main > div > article > section > ol > li > a:visited {color: darkmagenta}
-main > div > article > section > ol > li > a:hover {color: cornflowerblue}
-main > div > article > section > ol > li > a:active {color: darkblue}
-
-    /* Establishing the color-state hierarchy for the internal links found in the "footer" section. */
-footer > div > nav > a:link {color: #F2EDEB}
-footer > div > nav > a:visited {color: black}
-footer > div > nav > a:hover {color: darkblue}
-footer > div > nav > a:active {color: maroon}
+main > div > article > section > ol > li > a:visited {color: darkblue}
+main > div > article > section > ol > li > a:hover {color: darkmagenta}
+main > div > article > section > ol > li > a:active {color: maroon}
 
     /* Establishing the horizontal spacing between the internal links found in the "footer" section. */
-.footer-internal-links {
-  margin: 0px 73px 5px 73px;
-}
 
   /* << Link Formatting (end) >> */
 
